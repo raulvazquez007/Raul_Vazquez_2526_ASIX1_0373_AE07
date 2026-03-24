@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+
+  <plato tipo="entrante">
+    <nombre>Ensalada César</nombre>
+    <precio>8.50</precio>
+    <descripcion>Lechuga, pollo y parmesano</descripcion>
+    <calorias>350</calorias>
+    <caracteristicas>
+      <item>lacteo</item>
+      <item>carne</item>
+    </caracteristicas>
+  </plato>
+
+  <plato tipo="entrante">
+    <nombre>Gazpacho</nombre>
+    <precio>6.00</precio>
+    <descripcion>Sopa fría de tomate</descripcion>
+    <calorias>150</calorias>
+    <caracteristicas>
+      <item>vegano</item>
+      <item>sin gluten</item>
+    </caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Hamburguesa completa</nombre>
+    <precio>12.00</precio>
+    <descripcion>Carne, queso y bacon</descripcion>
+    <calorias>850</calorias>
+    <caracteristicas>
+      <item>carne</item>
+      <item>destacado</item>
+    </caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Pizza margarita</nombre>
+    <precio>10.00</precio>
+    <descripcion>Tomate y mozzarella</descripcion>
+    <calorias>700</calorias>
+    <caracteristicas>
+      <item>vegetariano</item>
+    </caracteristicas>
+  </plato>
+
+  <plato tipo="postre">
+    <nombre>Tarta de queso</nombre>
+    <precio>5.50</precio>
+    <descripcion>Cremosa</descripcion>
+    <calorias>400</calorias>
+    <caracteristicas>
+      <item>lacteo</item>
+    </caracteristicas>
+  </plato>
+
+  <!-- MÁS PLATOS -->
+  <plato tipo="principal"><nombre>Paella</nombre><precio>14</precio><descripcion>Arroz con marisco</descripcion><calorias>650</calorias><caracteristicas><item>marisco</item></caracteristicas></plato>
+  <plato tipo="principal"><nombre>Pasta carbonara</nombre><precio>11</precio><descripcion>Con nata</descripcion><calorias>780</calorias><caracteristicas><item>lacteo</item></caracteristicas></plato>
+  <plato tipo="entrante"><nombre>Bravas</nombre><precio>5</precio><descripcion>Patatas</descripcion><calorias>400</calorias><caracteristicas><item>vegano</item></caracteristicas></plato>
+  <plato tipo="entrante"><nombre>Calamares</nombre><precio>9</precio><descripcion>Fritos</descripcion><calorias>500</calorias><caracteristicas><item>marisco</item></caracteristicas></plato>
+  <plato tipo="postre"><nombre>Helado</nombre><precio>4</precio><descripcion>Sabores</descripcion><calorias>300</calorias><caracteristicas><item>lacteo</item></caracteristicas></plato>
+  <plato tipo="postre"><nombre>Brownie</nombre><precio>5</precio><descripcion>Chocolate</descripcion><calorias>450</calorias><caracteristicas><item>lacteo</item></caracteristicas></plato>
+
+</menu>
