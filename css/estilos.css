@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
 
-    background-image: url('../img/fondo.jpg');
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
