@@ -1,81 +1,140 @@
-/* BODY */
+/* TIPOGRAFÍA MÁS ELEGANTE */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: black;
+    font-family: 'Georgia', serif;
 }
 
-/* MARCO ROJO */
+/* MARCO MEJORADO */
 .marco {
     width: 95%;
     max-width: 1300px;
-    margin: 30px auto;
+    margin: 40px auto;
 
-    /* 👇 USA TU IMAGEN */
-    background-image: url("../img/marco.jpg");
+    background-image: url("../img/marco.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
-    padding: 60px 50px;
+    padding: 100px 80px 80px 80px;
+
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
-/* TÍTULO */
+/* TÍTULO PRO */
 h1 {
     text-align: center;
     color: #f5d28c;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+
+    /* ✨ brillo dorado */
+    text-shadow: 0 0 10px rgba(245,210,140,0.6);
+}
+
+/* CONTENEDOR */
+.menu-container {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    position: relative;
+}
+
+/* ✨ LÍNEAS DORADAS ENTRE COLUMNAS */
+.menu-container::before,
+.menu-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #f5d28c, transparent);
+}
+
+.menu-container::before {
+    left: 33.33%;
+}
+
+.menu-container::after {
+    left: 66.66%;
 }
 
 /* COLUMNAS */
-.menu-container {
-    display: flex;
-    gap: 30px;
-}
-
-/* COLUMNAS INDIVIDUALES */
 .columna {
     flex: 1;
-}
-
-/* TÍTULOS */
-.columna h2 {
     text-align: center;
-    color: #f5d28c;
-    margin-bottom: 20px;
 }
 
-/* TARJETAS */
+/* TÍTULOS COLUMNAS */
+.columna h2 {
+    color: #f5d28c;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* TARJETAS PRO */
 .card {
-    background: rgba(0, 0, 0, 0.65);
-    border-radius: 12px;
-    padding: 15px;
-    color: white;
-    margin-bottom: 15px;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
+    background: rgba(10, 10, 10, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    color: #eee;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(245,210,140,0.2);
+
+    backdrop-filter: blur(6px);
+
+    transition: all 0.3s ease;
 }
 
-/* HOVER */
+/* ✨ HOVER ELEGANTE */
 .card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(245,210,140,0.2);
+    border: 1px solid rgba(245,210,140,0.5);
 }
 
-/* TEXTO */
-.precio {
+/* NOMBRE PLATO */
+.card h3 {
+    margin-top: 0;
     color: #f5d28c;
+    font-size: 1.3rem;
+}
+
+/* TIPO */
+.tipo {
+    color: #bbb;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* PRECIO DESTACADO */
+.precio {
     font-weight: bold;
+    font-size: 18px;
+    color: #f5d28c;
 }
 
 /* ICONOS */
+.iconos {
+    margin-top: 10px;
+}
+
 .iconos i {
     color: #f5d28c;
-    margin-right: 5px;
+    margin-right: 6px;
+    font-size: 16px;
 }
 
 /* RESPONSIVE */
 @media(max-width:900px){
     .menu-container {
         flex-direction: column;
+    }
+
+    .menu-container::before,
+    .menu-container::after {
+        display: none;
     }
 }
