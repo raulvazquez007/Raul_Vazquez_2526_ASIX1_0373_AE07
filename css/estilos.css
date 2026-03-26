@@ -1,20 +1,26 @@
-css 
+/* Asegurar altura completa */
+html, body {
+    height: 100%;
+}
+
+/* BODY */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
 
-    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+    /* URL corregida */
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1920&auto=format&fit=crop");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* Oscurecer fondo */
+/* Oscurecer fondo (ajustado para que no lo tape demasiado) */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.45); /* antes 0.75 */
     z-index: 0;
 }
 
