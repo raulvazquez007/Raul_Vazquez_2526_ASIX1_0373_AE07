@@ -2,21 +2,26 @@
 $xml = simplexml_load_file("menu.xml");
 if (!$xml) die("Error al cargar el XML");
 
-$secciones = [
-    'entrante'  => ['titulo' => 'Entrantes', 'subtag' => 'Para picar'],
-    'principal' => ['titulo' => 'Principales', 'subtag' => 'Platos de fondo'],
-    'postre'    => ['titulo' => 'Postres',    'subtag' => 'Para terminar'],
-];
+// Detectamos los tipos directamente del XML, en el orden en que aparecen
+$secciones = [];
+foreach ($xml->plato as $plato) {
+    $tipo = (string)$plato['tipo'];
+    if (!isset($secciones[$tipo])) {
+        $titulo = isset($plato['titulo']) ? (string)$plato['titulo'] : ucfirst($tipo) . 's';
+        $subtag = isset($plato['subtag']) ? (string)$plato['subtag'] : '';
+        $secciones[$tipo] = ['titulo' => $titulo, 'subtag' => $subtag];
+    }
+}
 
 $iconos = [
-    'vegano'      => ['icono' => 'fa-leaf',                          'label' => 'Vegano'],
-    'vegetariano' => ['icono' => 'fa-seedling',                      'label' => 'Vegetariano'],
-    'sin gluten'  => ['icono' => 'fa-wheat-awn-circle-exclamation',  'label' => 'Sin gluten'],
-    'carne'       => ['icono' => 'fa-drumstick-bite',                'label' => 'Carne'],
-    'lacteo'      => ['icono' => 'fa-cheese',                        'label' => 'Lácteo'],
-    'destacado'   => ['icono' => 'fa-star',                          'label' => 'Destacado'],
-    'marisco'     => ['icono' => 'fa-shrimp',                        'label' => 'Marisco'],
-    'pescado'     => ['icono' => 'fa-fish',                          'label' => 'Pescado'],
+    'vegano'      => ['icono' => 'fa-leaf',                         'label' => 'Vegano'],
+    'vegetariano' => ['icono' => 'fa-seedling',                     'label' => 'Vegetariano'],
+    'sin gluten'  => ['icono' => 'fa-wheat-awn-circle-exclamation', 'label' => 'Sin gluten'],
+    'carne'       => ['icono' => 'fa-drumstick-bite',               'label' => 'Carne'],
+    'lacteo'      => ['icono' => 'fa-cheese',                       'label' => 'Lácteo'],
+    'destacado'   => ['icono' => 'fa-star',                         'label' => 'Destacado'],
+    'marisco'     => ['icono' => 'fa-shrimp',                       'label' => 'Marisco'],
+    'pescado'     => ['icono' => 'fa-fish',                         'label' => 'Pescado'],
 ];
 ?>
 <!DOCTYPE html>
