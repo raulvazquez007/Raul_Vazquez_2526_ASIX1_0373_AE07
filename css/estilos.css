@@ -1,0 +1,104 @@
+css 
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background-image: url("./img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Oscurecer fondo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 0;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #f5d28c;
+    padding: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* CONTENEDOR COLUMNAS */
+.menu-container {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* COLUMNAS */
+.columna {
+    flex: 1;
+}
+
+/* TÍTULOS COLUMNAS */
+.columna h2 {
+    text-align: center;
+    color: #f5d28c;
+    margin-bottom: 20px;
+}
+
+/* TARJETAS */
+.card {
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    color: #eee;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* TEXTO */
+.card h3 {
+    margin-top: 0;
+    color: #f5d28c;
+}
+
+.tipo {
+    color: #ccc;
+    font-style: italic;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 18px;
+    color: #f5d28c;
+}
+
+/* ICONOS */
+.iconos {
+    margin-top: 10px;
+}
+
+.iconos i {
+    color: #f5d28c;
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .menu-container {
+        flex-direction: column;
+    }
+}
