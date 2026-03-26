@@ -1,65 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menu>
 
+  <!-- ===== ENTRANTES ===== -->
   <plato tipo="entrante">
     <nombre>Ensalada César</nombre>
     <precio>8.50</precio>
-    <descripcion>Lechuga, pollo y parmesano</descripcion>
+    <descripcion>Lechuga romana, pollo a la plancha, parmesano y croutons caseros</descripcion>
     <calorias>350</calorias>
-    <caracteristicas>
-      <item>lacteo</item>
-      <item>carne</item>
-    </caracteristicas>
+    <caracteristicas><item>lacteo</item><item>carne</item></caracteristicas>
   </plato>
 
   <plato tipo="entrante">
-    <nombre>Gazpacho</nombre>
+    <nombre>Gazpacho andaluz</nombre>
     <precio>6.00</precio>
-    <descripcion>Sopa fría de tomate</descripcion>
+    <descripcion>Sopa fría de tomate, pimiento y pepino con aceite de oliva virgen extra</descripcion>
     <calorias>150</calorias>
-    <caracteristicas>
-      <item>vegano</item>
-      <item>sin gluten</item>
-    </caracteristicas>
+    <caracteristicas><item>vegano</item><item>sin gluten</item></caracteristicas>
   </plato>
 
+  <plato tipo="entrante">
+    <nombre>Patatas bravas</nombre>
+    <precio>5.00</precio>
+    <descripcion>Patatas fritas con salsa brava picante y alioli casero</descripcion>
+    <calorias>400</calorias>
+    <caracteristicas><item>vegano</item></caracteristicas>
+  </plato>
+
+  <plato tipo="entrante">
+    <nombre>Calamares a la romana</nombre>
+    <precio>9.00</precio>
+    <descripcion>Anillas rebozadas y fritas, servidas con limón y alioli</descripcion>
+    <calorias>500</calorias>
+    <caracteristicas><item>marisco</item></caracteristicas>
+  </plato>
+
+  <plato tipo="entrante">
+    <nombre>Croquetas de jamón</nombre>
+    <precio>7.50</precio>
+    <descripcion>Croquetas caseras de jamón ibérico con bechamel cremosa (6 uds.)</descripcion>
+    <calorias>430</calorias>
+    <caracteristicas><item>lacteo</item><item>carne</item></caracteristicas>
+  </plato>
+
+  <plato tipo="entrante">
+    <nombre>Pulpo a la gallega</nombre>
+    <precio>14.00</precio>
+    <descripcion>Pulpo cocido sobre cama de patata, pimentón de la Vera y aceite de oliva</descripcion>
+    <calorias>280</calorias>
+    <caracteristicas><item>marisco</item><item>sin gluten</item><item>destacado</item></caracteristicas>
+  </plato>
+
+  <plato tipo="entrante">
+    <nombre>Tabla de quesos</nombre>
+    <precio>11.00</precio>
+    <descripcion>Selección de quesos artesanales con mermelada de higo y nueces</descripcion>
+    <calorias>520</calorias>
+    <caracteristicas><item>lacteo</item><item>vegetariano</item></caracteristicas>
+  </plato>
+
+  <!-- ===== PRINCIPALES ===== -->
   <plato tipo="principal">
     <nombre>Hamburguesa completa</nombre>
     <precio>12.00</precio>
-    <descripcion>Carne, queso y bacon</descripcion>
+    <descripcion>Carne de ternera, queso cheddar, bacon crujiente, lechuga y tomate</descripcion>
     <calorias>850</calorias>
-    <caracteristicas>
-      <item>carne</item>
-      <item>destacado</item>
-    </caracteristicas>
+    <caracteristicas><item>carne</item><item>destacado</item></caracteristicas>
   </plato>
 
   <plato tipo="principal">
     <nombre>Pizza margarita</nombre>
     <precio>10.00</precio>
-    <descripcion>Tomate y mozzarella</descripcion>
+    <descripcion>Tomate natural, mozzarella fresca y albahaca sobre masa artesanal</descripcion>
     <calorias>700</calorias>
-    <caracteristicas>
-      <item>vegetariano</item>
-    </caracteristicas>
+    <caracteristicas><item>vegetariano</item></caracteristicas>
   </plato>
 
+  <plato tipo="principal">
+    <nombre>Paella valenciana</nombre>
+    <precio>14.00</precio>
+    <descripcion>Arroz con gambas, mejillones, almejas y sofrito con azafrán</descripcion>
+    <calorias>650</calorias>
+    <caracteristicas><item>marisco</item><item>sin gluten</item><item>destacado</item></caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Pasta carbonara</nombre>
+    <precio>11.00</precio>
+    <descripcion>Espaguetis con panceta, huevo, parmesano y pimienta negra</descripcion>
+    <calorias>780</calorias>
+    <caracteristicas><item>lacteo</item><item>carne</item></caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Solomillo a la pimienta</nombre>
+    <precio>22.00</precio>
+    <descripcion>Solomillo de ternera con salsa de pimienta verde y patatas asadas</descripcion>
+    <calorias>720</calorias>
+    <caracteristicas><item>carne</item><item>sin gluten</item><item>destacado</item></caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Bacalao al pil-pil</nombre>
+    <precio>17.00</precio>
+    <descripcion>Lomo de bacalao confitado con salsa pil-pil tradicional y guindilla</descripcion>
+    <calorias>410</calorias>
+    <caracteristicas><item>pescado</item><item>sin gluten</item></caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Risotto de setas</nombre>
+    <precio>13.00</precio>
+    <descripcion>Arroz cremoso con setas de temporada, parmesano y trufa negra</descripcion>
+    <calorias>590</calorias>
+    <caracteristicas><item>vegetariano</item><item>lacteo</item></caracteristicas>
+  </plato>
+
+  <plato tipo="principal">
+    <nombre>Lubina a la sal</nombre>
+    <precio>19.00</precio>
+    <descripcion>Lubina entera al horno con costra de sal, verduras asadas y limón</descripcion>
+    <calorias>380</calorias>
+    <caracteristicas><item>pescado</item><item>sin gluten</item></caracteristicas>
+  </plato>
+
+  <!-- ===== POSTRES ===== -->
   <plato tipo="postre">
     <nombre>Tarta de queso</nombre>
     <precio>5.50</precio>
-    <descripcion>Cremosa</descripcion>
+    <descripcion>Tarta al horno cremosa por dentro con coulis de frutos rojos</descripcion>
     <calorias>400</calorias>
-    <caracteristicas>
-      <item>lacteo</item>
-    </caracteristicas>
+    <caracteristicas><item>lacteo</item><item>destacado</item></caracteristicas>
   </plato>
 
-  <!-- MÁS PLATOS -->
-  <plato tipo="principal"><nombre>Paella</nombre><precio>14</precio><descripcion>Arroz con marisco</descripcion><calorias>650</calorias><caracteristicas><item>marisco</item></caracteristicas></plato>
-  <plato tipo="principal"><nombre>Pasta carbonara</nombre><precio>11</precio><descripcion>Con nata</descripcion><calorias>780</calorias><caracteristicas><item>lacteo</item></caracteristicas></plato>
-  <plato tipo="entrante"><nombre>Bravas</nombre><precio>5</precio><descripcion>Patatas</descripcion><calorias>400</calorias><caracteristicas><item>vegano</item></caracteristicas></plato>
-  <plato tipo="entrante"><nombre>Calamares</nombre><precio>9</precio><descripcion>Fritos</descripcion><calorias>500</calorias><caracteristicas><item>marisco</item></caracteristicas></plato>
-  <plato tipo="postre"><nombre>Helado</nombre><precio>4</precio><descripcion>Sabores</descripcion><calorias>300</calorias><caracteristicas><item>lacteo</item></caracteristicas></plato>
-  <plato tipo="postre"><nombre>Brownie</nombre><precio>5</precio><descripcion>Chocolate</descripcion><calorias>450</calorias><caracteristicas><item>lacteo</item></caracteristicas></plato>
+  <plato tipo="postre">
+    <nombre>Helado artesanal</nombre>
+    <precio>4.50</precio>
+    <descripcion>Tres bolas a elegir: vainilla, chocolate, fresa o pistacho</descripcion>
+    <calorias>300</calorias>
+    <caracteristicas><item>lacteo</item><item>vegetariano</item></caracteristicas>
+  </plato>
+
+  <plato tipo="postre">
+    <nombre>Brownie con helado</nombre>
+    <precio>6.00</precio>
+    <descripcion>Brownie de chocolate caliente con helado de vainilla y caramelo</descripcion>
+    <calorias>520</calorias>
+    <caracteristicas><item>lacteo</item></caracteristicas>
+  </plato>
+
+  <plato tipo="postre">
+    <nombre>Crema catalana</nombre>
+    <precio>5.00</precio>
+    <descripcion>Crema suave de vainilla con costra de azúcar quemado al momento</descripcion>
+    <calorias>340</calorias>
+    <caracteristicas><item>lacteo</item><item>vegetariano</item><item>sin gluten</item></caracteristicas>
+  </plato>
+
+  <plato tipo="postre">
+    <nombre>Tiramisú casero</nombre>
+    <precio>6.50</precio>
+    <descripcion>Bizcochos empapados en café, mascarpone y cacao en polvo</descripcion>
+    <calorias>460</calorias>
+    <caracteristicas><item>lacteo</item><item>vegetariano</item></caracteristicas>
+  </plato>
+
+  <plato tipo="postre">
+    <nombre>Coulant de chocolate</nombre>
+    <precio>7.00</precio>
+    <descripcion>Bizcocho con interior fundente, servido con nata montada</descripcion>
+    <calorias>490</calorias>
+    <caracteristicas><item>lacteo</item><item>vegetariano</item><item>destacado</item></caracteristicas>
+  </plato>
+
+  <plato tipo="postre">
+    <nombre>Fruta de temporada</nombre>
+    <precio>4.00</precio>
+    <descripcion>Selección de frutas frescas de temporada con menta y miel</descripcion>
+    <calorias>180</calorias>
+    <caracteristicas><item>vegano</item><item>sin gluten</item></caracteristicas>
+  </plato>
 
 </menu>
