@@ -1,109 +1,101 @@
-/* Asegurar altura completa */
 html, body {
     height: 100%;
+    margin: 0;
 }
 
-/* BODY */
 body {
-    margin: 0;
     font-family: 'Segoe UI', sans-serif;
-
-    /* URL */
     background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1920&auto=format&fit=crop");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* Oscurecer fondo */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.45); /* antes 0.75 */
+    background: rgba(0, 0, 0, 0.45);
     z-index: 0;
 }
 
-/* TÍTULO */
 h1 {
+    position: relative;
+    z-index: 1;
     text-align: center;
     color: #f5d28c;
-    padding: 30px;
     font-size: 2.5rem;
     letter-spacing: 2px;
-    position: relative;
-    z-index: 1;
+    padding: 30px 0;
+    margin: 0;
 }
 
-/* CONTENEDOR COLUMNAS */
 .menu-container {
+    position: relative;
+    z-index: 1;
     display: flex;
     gap: 25px;
-    padding: 30px;
-    position: relative;
-    z-index: 1;
+    padding: 0 30px 40px;
 }
 
-/* COLUMNAS */
 .columna {
     flex: 1;
 }
 
-/* TÍTULOS COLUMNAS */
 .columna h2 {
     text-align: center;
     color: #f5d28c;
     margin-bottom: 20px;
 }
 
-/* TARJETAS */
 .card {
     background: rgba(20, 20, 20, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 20px;
-    color: #eee;
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(8px);
-    transition: 0.3s;
     margin-bottom: 15px;
+    color: #eee;
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* HOVER */
 .card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* TEXTO */
 .card h3 {
-    margin-top: 0;
+    margin: 0 0 6px;
     color: #f5d28c;
 }
 
+.card p {
+    margin: 4px 0;
+}
+
 .tipo {
-    color: #ccc;
+    color: #bbb;
     font-style: italic;
+    font-size: 0.85rem;
 }
 
 .precio {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #f5d28c;
 }
 
-/* ICONOS */
 .iconos {
     margin-top: 10px;
 }
 
 .iconos i {
     color: #f5d28c;
+    font-size: 17px;
     margin-right: 6px;
-    font-size: 18px;
 }
 
-/* RESPONSIVE */
-@media(max-width:900px){
+@media (max-width: 900px) {
     .menu-container {
         flex-direction: column;
     }
