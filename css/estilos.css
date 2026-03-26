@@ -1,115 +1,84 @@
-/* TIPOGRAFÍA MÁS ELEGANTE */
+css 
 body {
-    font-family: 'Georgia', serif;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* MARCO MEJORADO */
-.marco {
-    width: 95%;
-    max-width: 1300px;
-    margin: 40px auto;
+/* Oscurecer fondo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 0;
+}
 
-    background-image: url("../img/marco.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    padding: 100px 80px 80px 80px;
-
-    box-sizing: border-box;
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #f5d28c;
+    padding: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     position: relative;
     z-index: 1;
 }
 
-/* TÍTULO PRO */
-h1 {
-    text-align: center;
-    color: #f5d28c;
-    font-size: 3rem;
-    letter-spacing: 3px;
-    margin-bottom: 40px;
-
-    /* ✨ brillo dorado */
-    text-shadow: 0 0 10px rgba(245,210,140,0.6);
-}
-
-/* CONTENEDOR */
+/* CONTENEDOR COLUMNAS */
 .menu-container {
     display: flex;
-    gap: 40px;
-    padding: 0;
+    gap: 25px;
+    padding: 30px;
     position: relative;
-}
-
-/* ✨ LÍNEAS DORADAS ENTRE COLUMNAS */
-.menu-container::before,
-.menu-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, transparent, #f5d28c, transparent);
-}
-
-.menu-container::before {
-    left: 33.33%;
-}
-
-.menu-container::after {
-    left: 66.66%;
+    z-index: 1;
 }
 
 /* COLUMNAS */
 .columna {
     flex: 1;
-    text-align: center;
 }
 
 /* TÍTULOS COLUMNAS */
 .columna h2 {
+    text-align: center;
     color: #f5d28c;
-    margin-bottom: 25px;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
-/* TARJETAS PRO */
+/* TARJETAS */
 .card {
-    background: rgba(10, 10, 10, 0.7);
+    background: rgba(20, 20, 20, 0.85);
     border-radius: 15px;
     padding: 20px;
     color: #eee;
-    margin-bottom: 20px;
-
-    border: 1px solid rgba(245,210,140,0.2);
-
-    backdrop-filter: blur(6px);
-
-    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+    margin-bottom: 15px;
 }
 
-/* ✨ HOVER ELEGANTE */
+/* HOVER */
 .card:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 30px rgba(245,210,140,0.2);
-    border: 1px solid rgba(245,210,140,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-/* NOMBRE PLATO */
+/* TEXTO */
 .card h3 {
     margin-top: 0;
     color: #f5d28c;
-    font-size: 1.3rem;
 }
 
-/* TIPO */
 .tipo {
-    color: #bbb;
+    color: #ccc;
     font-style: italic;
-    margin-bottom: 10px;
 }
 
-/* PRECIO DESTACADO */
 .precio {
     font-weight: bold;
     font-size: 18px;
@@ -124,17 +93,12 @@ h1 {
 .iconos i {
     color: #f5d28c;
     margin-right: 6px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* RESPONSIVE */
 @media(max-width:900px){
     .menu-container {
         flex-direction: column;
-    }
-
-    .menu-container::before,
-    .menu-container::after {
-        display: none;
     }
 }
