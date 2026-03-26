@@ -1,55 +1,44 @@
-/* Asegurar altura completa */
-html, body {
-    height: 100%;
-}
-
 /* BODY */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-
-    /* URL corregida */
-    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1920&auto=format&fit=crop");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: black;
 }
 
-/* Oscurecer fondo (ajustado para que no lo tape demasiado) */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.45); /* antes 0.75 */
-    z-index: 0;
+/* MARCO ROJO */
+.marco {
+    width: 95%;
+    max-width: 1300px;
+    margin: 30px auto;
+
+    /* 👇 USA TU IMAGEN */
+    background-image: url("../img/marco.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 60px 50px;
+    box-sizing: border-box;
 }
 
 /* TÍTULO */
 h1 {
     text-align: center;
     color: #f5d28c;
-    padding: 30px;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    position: relative;
-    z-index: 1;
-}
-
-/* CONTENEDOR COLUMNAS */
-.menu-container {
-    display: flex;
-    gap: 25px;
-    padding: 30px;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 30px;
 }
 
 /* COLUMNAS */
+.menu-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* COLUMNAS INDIVIDUALES */
 .columna {
     flex: 1;
 }
 
-/* TÍTULOS COLUMNAS */
+/* TÍTULOS */
 .columna h2 {
     text-align: center;
     color: #f5d28c;
@@ -58,48 +47,30 @@ h1 {
 
 /* TARJETAS */
 .card {
-    background: rgba(20, 20, 20, 0.85);
-    border-radius: 15px;
-    padding: 20px;
-    color: #eee;
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(8px);
-    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
     margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
 }
 
 /* HOVER */
 .card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: scale(1.02);
 }
 
 /* TEXTO */
-.card h3 {
-    margin-top: 0;
-    color: #f5d28c;
-}
-
-.tipo {
-    color: #ccc;
-    font-style: italic;
-}
-
 .precio {
-    font-weight: bold;
-    font-size: 18px;
     color: #f5d28c;
+    font-weight: bold;
 }
 
 /* ICONOS */
-.iconos {
-    margin-top: 10px;
-}
-
 .iconos i {
     color: #f5d28c;
-    margin-right: 6px;
-    font-size: 18px;
+    margin-right: 5px;
 }
 
 /* RESPONSIVE */
